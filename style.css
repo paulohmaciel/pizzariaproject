@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     background-color:#EEE;
     font-family:'Lato',Helvetica,Arial;
@@ -57,10 +58,27 @@ aside.show {
 main {
     flex:1;
     padding:20px;
-}
+   }
 h1 {
     font-family:'Hepta Slab', Helvetica, Arial;
+    
 }
+h1 .pizzatittle {
+    align-items: center;
+    width: 500px;
+}
+h1#pizza-tittle {
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: orange;
+    border-radius: 200%;
+    border-style: solid;
+    width: 500px;
+}
+
 .pizza-area {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
@@ -339,6 +357,10 @@ h1 {
 @media (max-width:840px) {
     body {
         flex-direction: column;
+    }
+    h1#pizza-tittle {
+        width: 300px;
+        margin-bottom: 20px;
     }
     .pizza-area {
         display:block;
